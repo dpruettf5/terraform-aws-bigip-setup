@@ -18,6 +18,7 @@ all:
         ${bigip_host_ip}: # the ip address or hostname of the BIG-IP management endpoint
           bigip_provider:
             server: "{{ inventory_hostname }}" # the ip address or hostname of the BIG-IP management endpoint. defaults to inventory_hostname
+            server_port: "443"
             user: "${bigip_username}" # the username that will be used to access the BIG-IP management endpoint
             password: "${bigip_password}" # the password that will be used to access the BIG-IP management endpoint
             validate_certs: false # since these boxes are assumed to have self-signed certs validatation is disabled
