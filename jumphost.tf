@@ -106,7 +106,7 @@ resource "null_resource" "transfer" {
       }
     )
 
-    destination = "~/inventory.yml"
+    destination = "/home/ubuntu/inventory.yml"
 
     connection {
       type        = "ssh"
